@@ -1,0 +1,33 @@
+<meta charset="UTF-8" />
+
+<h1>PROGRAMA CALCULO DEL IMC Y PROMEDIO DEL IMC</h1>
+
+<script>
+
+  function saltarLinea() {
+    document.write('<br><br><br>');
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  function calcularImc(peso, altura) {
+    imc = peso / (altura * altura);
+    return imc;
+  }
+
+  function calcularPromImc(imc1, imc2) {
+    imcPromedio = (imc1 + imc2) / 2;
+    return imcPromedio;
+  }
+
+  var imcStefi = calcularImc(70, 1.61);
+  var imcMarce = calcularImc(70, 1.6);
+  var promedio = calcularPromImc(imcStefi, imcMarce);
+  imprimir(
+    'El promedio del indice de masa corporal de Stefi y Marce es: ' + promedio
+  );
+
+</script>

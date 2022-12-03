@@ -1,0 +1,28 @@
+<meta charset="UTF-8" />
+
+<h1>PROGRAMA CALCULO DEL IMC CON FUNCIONES</h1>
+<br>
+
+<script>
+
+  function saltarLinea() {
+    document.write('<br><br><br>');
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  function calcularImc(peso, altura, nombre) {
+    imc = peso / (altura * altura);
+    imprimir(
+      'El indice de masa corporal de ' + nombre + ' es: ' + Math.round(imc)
+    );
+  }
+
+  calcularImc(70, 1.61, 'Stefania');
+
+  calcularImc(70, 1.6, 'Marcela');
+
+</script>

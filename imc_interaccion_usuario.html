@@ -1,0 +1,30 @@
+<meta charset="UTF-8" />
+
+<h1>PROGRAMA CALCULO DEL IMC CON INTERACCION CON EL USUARIO</h1>
+<br>
+
+<script>
+
+  function saltarLinea() {
+    document.write('<br><br><br>');
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  function calcularImc(peso, altura) {
+    imc = peso / (altura * altura);
+    return imc;
+  }
+  //Se usa la funcion prompt para que el usuario interactue
+  var nombre = prompt('Ingrese su nombre');
+  var pesoPedido = prompt(nombre + ' Ingrese su peso');
+  var alturaPedido = prompt(nombre + ' Ingrese su altura');
+
+  var imc = calcularImc(pesoPedido, alturaPedido);
+
+  imprimir('Su indice de masa corporal de ' + nombre + ' es: ' + imc);
+
+</script>

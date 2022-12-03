@@ -1,0 +1,26 @@
+<meta charset="UTF-8" />
+
+<h3>Alcohol o Gasolina?</h3>
+
+<script>
+
+  //Declarando variables tanque, distancia y consumoGasolina
+  var tanque = 40;
+  var distancia = 480;
+  var consumoGasolina = distancia / tanque;
+
+  document.write(
+    'La eficiencia de un coche con gasolina es: ' + consumoGasolina + ' km/l'
+  );
+
+  document.write('<br>');
+  document.write('<br>');
+
+  //Se reutiliza la variable distancia y se declara consumoAlcohol
+  distancia = 300;
+  var consumoAlcohol = distancia / tanque;
+  document.write(
+    'La eficiencia de un coche con alcohol es: ' + consumoAlcohol + ' km/l'
+  );
+
+</script>

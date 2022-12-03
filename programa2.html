@@ -1,0 +1,56 @@
+<meta charset="UTF-8" />
+
+<h3>USANDO VARIABLES</h3>
+
+<script>
+
+  /*Primero se ejecutará 2025*/
+  var anho = 2025;
+  document.write('Juan tiene: ' + (anho - 2000) + ' anios');
+  document.write('<br>');
+  document.write('<br>');
+
+  document.write('Pedro tiene: ' + (anho - 1995) + ' anios');
+  document.write('<br>');
+  document.write('<br>');
+
+  /*Y luego 2030 */
+
+  anho = 2030;
+
+  document.write('Carlos tiene: ' + (anho - 2005) + ' anios');
+  document.write('<br>');
+  document.write('<br>');
+
+  anho = 2020;
+  document.write('Stefania tiene: ' + (anho - 2010) + ' anios');
+  document.write('<br>');
+  document.write('<br>');
+
+  document.write('Marcela tiene: ' + (anho - 1995) + ' anios');
+  document.write('<br>');
+  document.write('<br>');
+
+  document.write('Viviana tiene: ' + (anho - 2005) + ' anios');
+  document.write('<br>');
+  document.write('<br>');
+
+  var edadStefania = 10;
+  var edadMarcela = 25;
+  var edadViviana = 15;
+
+  var nombre1 = 'Stefania';
+  var nombre2 = 'Marcela';
+  var nombre3 = 'Viviana';
+
+  promedio = (edadStefania + edadMarcela + edadViviana) / 3;
+
+  document.write(
+    `El promedio de ${nombre1}, ${nombre2} y ${nombre3} es: ` +
+    Math.round(promedio) +
+    ' anios'
+  );
+  document.write('<br>');
+  document.write('<br>');
+
+</script>

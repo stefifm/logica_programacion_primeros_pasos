@@ -1,0 +1,59 @@
+<meta charset="UTF-8" />
+
+<script>
+
+  function saltarLinea() {
+    document.write('<br><br><br>');
+  }
+
+  /*Funcion con parametro*/
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var anho = 2025;
+  var saltoLinea = '<br><br><br>';
+
+  /*Sin repetir codigo usando variables*/
+
+  document.write('<h1>Sin repetir codigo con variables</h1>');
+  document.write(saltoLinea);
+
+  document.write('Juan tiene: ' + (anho - 2000) + ' anios');
+  document.write(saltoLinea);
+
+  document.write('Pedro tiene: ' + (anho - 1995) + ' anios');
+  document.write(saltoLinea);
+
+  anho = 2030;
+  document.write('Carlos tiene: ' + (anho - 2005) + ' anios');
+  document.write(saltoLinea);
+
+  /*Sin repetir codigo usando funciones*/
+
+  document.write('<h1>Sin repetir codigo con funciones</h1>');
+  saltarLinea();
+
+  document.write('Juan tiene: ' + (anho - 2000) + ' anios');
+  saltarLinea();
+
+  document.write('Pedro tiene: ' + (anho - 1995) + ' anios');
+  saltarLinea();
+
+  anho = 2030;
+  document.write('Carlos tiene: ' + (anho - 2005) + ' anios');
+  saltarLinea();
+
+  /*Recreando document.write() y con saltarLinea()*/
+
+  imprimir('<h1>Probando la nueva funcion imprimir</h1>');
+
+  imprimir('Stefania tiene: ' + (anho - 2010) + ' anios');
+
+  imprimir('Marcela tiene: ' + (anho - 1995) + ' anios');
+
+  imprimir('Viviana tiene: ' + (anho - 2005) + ' anios');
+
+</script>
